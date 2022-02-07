@@ -2,6 +2,14 @@
 def git_auth = "faaf8dd2-ff5c-4588-aca5-b0cd56df51de"
 //github仓库地址
 def git_url = "git@github.com:endeavor66/dp_test.git"
+//构建版本的名称
+def tag = "latest"
+//Harbor私服地址
+def harbor_url = "172.19.240.221:85"
+//Harbor的项目名称
+def harbor_project_name = "dp_test"
+//Harbor的凭证
+def harbor_auth = "5a3152e2-684f-41d1-9022-5290bdd5b516"
 
 node {
     stage('拉取源代码') {
