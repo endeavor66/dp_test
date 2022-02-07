@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org/DTD Mapper 3.0" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.dp.mapper.RecommendMapper">
+
+    <select id="selectAllRecommendResultId" resultMap="String">
+        select id from recommand_result_dp group by id
+    </select>
+
+    <insert id="insertRecommendResult" parameterType="com.example.dp.pojo.RecommendResult">
+        insert into recommand_result_dp values (#{id},#{shop_id},#{recommand_date},#{product_id},#{weight},#{reason})
+    </insert>
+
+    <select id="getRelation_pra" resultMap="String">
+        select relation_pra from recommand_relation_dp
+        where product_id1 = #{product_id1} and product_id2 = #{product_id2}
+    </select>
+
+    <resultMap id="String" type="java.lang.String"></resultMap>
+    <resultMap id="RecommendResult" type="com.example.dp.pojo.RecommendResult">
+        <result column="id" property="id"></result>
+        <result column="shop_id" property="shop_id"></result>
+        <result column="recommand_date" property="recommand_date"></result>
+        <result column="product_id" property="product_id"></result>
+        <result column="weight" property="weight"></result>
+        <result column="reason" property="reason"></result>
+    </resultMap>
+
+
+</mapper>

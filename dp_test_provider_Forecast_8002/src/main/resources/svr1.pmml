@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PMML xmlns="http://www.dmg.org/PMML-4_3" xmlns:data="http://jpmml.org/jpmml-model/InlineTable" version="4.3">
+	<Header>
+		<Application name="JPMML-SkLearn" version="1.6.18"/>
+		<Timestamp>2021-05-07T13:46:11Z</Timestamp>
+	</Header>
+	<DataDictionary>
+		<DataField name="y" optype="continuous" dataType="double"/>
+		<DataField name="x1" optype="continuous" dataType="double"/>
+	</DataDictionary>
+	<SupportVectorMachineModel functionName="regression" algorithmName="sklearn.svm._classes.SVR">
+		<MiningSchema>
+			<MiningField name="y" usageType="target"/>
+			<MiningField name="x1"/>
+		</MiningSchema>
+		<RadialBasisKernelType/>
+		<VectorDictionary>
+			<VectorFields>
+				<FieldRef field="x1"/>
+			</VectorFields>
+			<VectorInstance id="0">
+				<Array type="real">5.0</Array>
+			</VectorInstance>
+			<VectorInstance id="2">
+				<Array type="real">7.0</Array>
+			</VectorInstance>
+		</VectorDictionary>
+		<SupportVectorMachine>
+			<SupportVectors>
+				<SupportVector vectorId="0"/>
+				<SupportVector vectorId="2"/>
+			</SupportVectors>
+			<Coefficients absoluteValue="8.0">
+				<Coefficient value="-0.9167916247552186"/>
+				<Coefficient value="0.9167916247552186"/>
+			</Coefficients>
+		</SupportVectorMachine>
+	</SupportVectorMachineModel>
+</PMML>

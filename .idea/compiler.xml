@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dp_test_provider_Recommand_8003" />
+        <module name="dp_test_zuul_9001" />
+        <module name="dp_test_provider_FileProcess_8006" />
+        <module name="dp_test_provider_Client_8004" />
+        <module name="dp_test_consumer_80" />
+        <module name="dp_test_provider_DataManager_8001" />
+        <module name="dp_test_provider_dpPresent_8005" />
+        <module name="dp_test_provider_Forecast_8002" />
+        <module name="dp_test_eureka_7001" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api" target="1.8" />
+      <module name="dp_test_provider_8001" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
