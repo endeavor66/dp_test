@@ -21,7 +21,7 @@ hystrix:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://172.17.0.2:7001/eureka/
   instance:
     instance-id: zuul9001.com
     prefer-ip-address: true
