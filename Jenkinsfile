@@ -27,8 +27,6 @@ node {
     stage('编译，构建镜像') {
         //定义镜像名称
         def imageName = "${project_name}:${tag}"
-        //编译，安装公共工程
-        sh "mvn -f tensquare_common clean install"
         //编译，构建本地镜像
         sh "mvn -f ${project_name} clean package dockerfile:build"
         //给镜像打标签
