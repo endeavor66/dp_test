@@ -7,4 +7,13 @@ node {
     stage('拉取源代码') {
         checkout([$class: 'GitSCM', branches: [[name: "*/master"]], extensions: [], userRemoteConfigs: [[credentialsId: "${git_auth}", url: "${git_url}"]]])
     }
+    stage('代码审查') {
+        def scannerHome = tool 'sonarqube-scanner'
+        withSonarQubeEnv('sonarqube') {
+            sh """
+            cd ${project_name}
+            ${scannerHome}/bin/sonar-scanner
+            """
+        }
+    }
 }
