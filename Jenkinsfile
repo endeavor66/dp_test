@@ -16,4 +16,35 @@ node {
             """
         }
     }
+    stage('编译，构建镜像') {
+        //定义镜像名称
+        def imageName = "${project_name}:${tag}"
+        //编译，安装公共工程
+        sh "mvn -f tensquare_common clean install"
+        //编译，构建本地镜像
+        sh "mvn -f ${project_name} clean package dockerfile:build"
+        //给镜像打标签
+        sh "docker tag ${imageName} ${harbor_url}/${harbor_project_name}/${imageName}"
+        //登录Harbor，并上传镜像
+        withCredentials([usernamePassword(credentialsId: "${harbor_auth}",
+            passwordVariable: 'password', usernameVariable: 'username')]) {
+            //登录
+            sh "docker login -u ${username} -p ${password} ${harbor_url}"
+            //上传镜像
+            sh "docker push ${harbor_url}/${harbor_project_name}/${imageName}"
+        }
+        //删除本地镜像
+        sh "docker rmi -f ${imageName}"
+        sh "docker rmi -f ${harbor_url}/${harbor_project_name}/${imageName}"
+
+        //=====以下为远程调用进行项目部署========
+        sshPublisher(publishers: [sshPublisherDesc(configName: 'master_server',
+            transfers: [sshTransfer(cleanRemote: false, excludes: '',
+                execCommand: "/opt/jenkins_shell/deploy.sh $harbor_url $harbor_project_name $project_name $tag $port",
+                execTimeout: 120000, flatten: false, makeEmptyDirs: false,
+                noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '',
+                remoteDirectorySDF: false, removePrefix: '', sourceFiles: '')],
+            usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: false)])
+
+    }
 }
