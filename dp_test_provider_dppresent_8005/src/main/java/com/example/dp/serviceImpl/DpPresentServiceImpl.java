@@ -41,8 +41,10 @@ public class DpPresentServiceImpl implements DpPresentService {
             }
              */
             //展示板
-            if(id.equals("jack")&&code.equals("123456"))
+            if(id.equals("jack")&&code.equals("123456")){
+                System.out.println("登录成功");
                 result = true;
+            }
             //展示板
             return result;
         }catch (Exception e) {

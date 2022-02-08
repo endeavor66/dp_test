@@ -3,10 +3,10 @@ server:
 
 
 eureka:
-  instance:
-    hostname: 172.19.241.99
   client:
     register-with-eureka: false #是否向注册中心注册自己
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://172.17.0.2:${server.port}/eureka  #暴露Eureka服务访问地址
+    server:
+      enable-self-preservation: false # 关闭自我保护
