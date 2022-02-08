@@ -58,18 +58,18 @@ public class DpPresentServiceImpl implements DpPresentService {
     @Override
     public Object loginData(String managerId){
         try{
-            /*临时
             ResponseVO r = template.getForObject(url+"/provider_DataManager/loginInfo?userName="+managerId, ResponseVO.class);
             System.out.println("loginData == "+r.getData());
             return r.getData();
-             */
 
+            /*
             //展示版
             List<ShopInfNeed> shops = new ArrayList<>();
             shops.add(new ShopInfNeed("0001","KFC"));
             shops.add(new ShopInfNeed("0002","老乡鸡"));
             return new ShopVO("0001","jack",shops);
             //展示版
+             */
         }catch (Exception e) {
             e.printStackTrace();
             return ResponseVO.buildFailure("Impl failed");
