@@ -12,7 +12,7 @@
         <module name="dp_test_provider_FileProcess_8006" />
         <module name="dp_test_consumer_81" />
         <module name="dp_test_provider_Client_8004" />
-        <module name="dp_test_provider_DataManager_8001" />
+        <module name="dp_test_provider_datamanager_8001" />
         <module name="dp_test_provider_Forecast_8002" />
         <module name="dp_test_eureka_7001" />
       </profile>
