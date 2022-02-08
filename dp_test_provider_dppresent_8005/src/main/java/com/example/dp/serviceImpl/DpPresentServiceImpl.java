@@ -31,7 +31,7 @@ public class DpPresentServiceImpl implements DpPresentService {
     public Object login(String id,String code){
         try{
             boolean result=false;
-            /* 临时
+
             //ResponseVO r = template.getForObject(url+"/provider_DataManager/login?userName="+id+"&passWord="+code, ResponseVO.class);
             //ResponseVO r = template.getForObject(url+"/shop/list", ResponseVO.class);
             ResponseVO r = dataManagerApi.loginResult(id,code);
@@ -39,12 +39,14 @@ public class DpPresentServiceImpl implements DpPresentService {
             if(r.getStatus()==0){
                 result=true;
             }
-             */
+
+            /*
             //展示板
             if(id.equals("jack")&&code.equals("123456")){
                 System.out.println("登录成功");
                 result = true;
             }
+            */
             //展示板
             return result;
         }catch (Exception e) {

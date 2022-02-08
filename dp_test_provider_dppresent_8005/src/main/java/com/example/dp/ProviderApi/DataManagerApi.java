@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 //@FeignClient(name = "dp-test-provider-datamanager", url ="172.19.241.210:8001")
-@FeignClient(name = "dp-test-provider-datamanager", url ="localhost:8001")
+@FeignClient(name = "dp-test-provider-datamanager", url ="172.17.0.5:8001")
 public interface DataManagerApi {
 
     @GetMapping("/shop/list")
