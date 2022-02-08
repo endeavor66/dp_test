@@ -1,0 +1,64 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: dp_test_zuul
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+  eureka:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 12000
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka # http://172.17.0.2:7001/eureka
+  instance:
+    instance-id: zuul9001.com
+    prefer-ip-address: true
+
+
+zuul:
+#这里配置服务名在网址上的屏蔽效果
+  routes:
+    datamanager:
+      path: /datamanager/**
+      serviceId: dp-test-provider-datamanager
+    consumer:
+      path: /consumer/**
+      serviceId: dp-test-consumer
+    client:
+      path: /client/**
+      serviceId: dp-test-provider-client
+    dppresent:
+      path: /dppresent/**
+      serviceId: dp-test-provider-dppresent
+    #dppresent:
+     # path: /dppresent/**
+     # url: http://172.29.33.178:8005
+    #dppresent.url: http://172.29.33.178:8005
+  ignored-services: dp_test_provider_datamanager
+# ignored-services: "*" 全部原服务名隐藏
+
+  #retryable: true
+  #semaphore:
+  #  max-semaphores:
+  #ribbon-isolation-strategy: semaphore
+  host:
+    socket-timeout-millis: 12000
+    connect-timeout-millis: 12000
+
+
+feign:
+  hystrix:
+    enabled: true
+
