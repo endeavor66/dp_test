@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_consumer_81" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_consumer_81/src/main/java" charset="UTF-8" />
@@ -23,9 +24,8 @@
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_dpPresent_8005" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_dpPresent_8005/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_dpPresent_8005/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_dppresent_8005/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_dppresent_8005/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_zuul_9001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_zuul_9001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_zuul_9001/src/main/resources" charset="UTF-8" />
