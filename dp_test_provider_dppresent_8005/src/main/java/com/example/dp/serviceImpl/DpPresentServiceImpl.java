@@ -22,7 +22,7 @@ public class DpPresentServiceImpl implements DpPresentService {
     @Autowired
     private DataManagerApi dataManagerApi;
 
-    private static final String url = "http://localhost:9001/datamanager";
+    private static final String url = "http://172.19.241.99:9001/datamanager";
 
     //学校云主机测试
     //private static final String url = "http://172.19.241.210:9001/datamanager";
