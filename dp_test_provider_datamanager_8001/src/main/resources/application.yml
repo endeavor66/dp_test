@@ -25,3 +25,6 @@ eureka:
     service-url:
       defaultZone: http://172.17.0.2:7001/eureka/
       #defaultZone: http://172.19.241.210:7001/eureka/
+  instance:
+    prefer-ip-address: true
+    ip-address: 172.17.0.5:8001
