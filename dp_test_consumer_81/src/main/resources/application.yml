@@ -1,9 +1,15 @@
 server:
   port: 81
 
+spring:
+  application:
+    name: dp_test_consumer
+
   #配置eureka注册
 eureka:
   client:
     service-url:
       #defaultZone: http://172.19.241.210:7001/eureka/
       defaultZone: http://172.19.241.99:7001/eureka/
+  instance:
+    prefer-ip-address: true

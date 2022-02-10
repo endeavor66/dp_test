@@ -19,7 +19,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="api" target="1.8" />
-      <module name="dp_test_consumer_81" target="1.8" />
       <module name="dp_test_provider_8001" target="1.8" />
     </bytecodeTargetLevel>
   </component>
