@@ -10,9 +10,6 @@
     <file url="file://$PROJECT_DIR$/dp_test_eureka_7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_eureka_7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_eureka_7001/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_Client_8004" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_Client_8004/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_Client_8004/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_FileProcess_8006" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_FileProcess_8006/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_FileProcess_8006/src/main/resources" charset="UTF-8" />
@@ -22,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_client_8004/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_client_8004/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_datamanager_8001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_datamanager_8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_dppresent_8005/src/main/java" charset="UTF-8" />

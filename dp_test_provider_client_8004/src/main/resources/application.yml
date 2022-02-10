@@ -12,12 +12,12 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/dp?useUnicode=true&characterEncoding=utf-8
+    url: jdbc:mysql://172.19.241.99:3306/dp?useUnicode=true&characterEncoding=utf-8
     username: root
-    password: 123456
+    password: Root123@
 
 #配置eureka注册
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://172.19.241.99:7001/eureka/

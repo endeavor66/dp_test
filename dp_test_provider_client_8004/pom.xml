@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dp_test_provider_Client_8004</artifactId>
+    <artifactId>dp_test_provider_client_8004</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
