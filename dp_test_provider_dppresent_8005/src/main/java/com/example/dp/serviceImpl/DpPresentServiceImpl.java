@@ -79,16 +79,17 @@ public class DpPresentServiceImpl implements DpPresentService {
     @Override
     public Object getShopInfo(String id){
         try{
-            /*临时
+
             ResponseVO r = template.getForObject(url+"/provider_DataManager/getShopInfo?id="+id, ResponseVO.class);
             System.out.println("getShopInfo == "+r.getData());
             return r.getData();
 
-             */
 
+            /*
             //展示版
             return new ShopVObyD("0001", "KFC", "上海", "快餐连锁", new Date(), "上海市的第一家肯德基，见证了上海市区的变迁，多年历史，不变的却是为顾客服务的一片心意", "贾老板");
             //展示版
+            */
         }catch (Exception e) {
             e.printStackTrace();
             return ResponseVO.buildFailure("Impl failed");
