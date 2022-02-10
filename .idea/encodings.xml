@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="" charset="UTF-8" />
     <file url="" charset="UTF-8" />
+    <file url="" charset="UTF-8" />
+    <file url="" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_consumer_81" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_consumer_81/src/main/java" charset="UTF-8" />
@@ -10,12 +12,6 @@
     <file url="file://$PROJECT_DIR$/dp_test_eureka_7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_eureka_7001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_eureka_7001/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_FileProcess_8006" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_FileProcess_8006/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_FileProcess_8006/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_Forecast_8002" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_Forecast_8002/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/dp_test_provider_Forecast_8002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_Recommand_8003/src/main/resources" charset="UTF-8" />
@@ -25,6 +21,10 @@
     <file url="file://$PROJECT_DIR$/dp_test_provider_datamanager_8001/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_dppresent_8005/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_provider_dppresent_8005/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_fileprocess_8006/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_fileprocess_8006/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_forecast_8002/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dp_test_provider_forecast_8002/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_zuul_9001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_zuul_9001/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_zuul_9001/src/main/resources" charset="UTF-8" />
