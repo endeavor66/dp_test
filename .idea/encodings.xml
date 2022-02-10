@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="" charset="UTF-8" />
-    <file url="" charset="UTF-8" />
-    <file url="" charset="UTF-8" />
-    <file url="" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_consumer_81" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/dp_test_consumer_81/src/main/java" charset="UTF-8" />

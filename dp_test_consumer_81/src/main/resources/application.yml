@@ -6,4 +6,4 @@ eureka:
   client:
     service-url:
       #defaultZone: http://172.19.241.210:7001/eureka/
-      defaultZone: http://localhost:7001/eureka/
+      defaultZone: http://172.19.241.99:7001/eureka/
