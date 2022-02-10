@@ -36,9 +36,6 @@ node {
         }
     }
     stage('编译，构建镜像') {
-        //编译，安装公共工程
-        sh "mvn -f tensquare_common clean install"
-
         // 遍历微服务数组，依次构建镜像
         for(int i = 0; i < selectedProjects.size(); i++){
             // selectedProjects[i]的格式为 "微服务名@端口"
